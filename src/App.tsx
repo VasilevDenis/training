@@ -17,7 +17,7 @@ const App: React.FC = () => {
     const existingWorkoutIndex = workouts.findIndex((workout) => workout.date === date);
     if (existingWorkoutIndex >= 0) {
       const updatedWorkouts = [...workouts];
-      updatedWorkouts[existingWorkoutIndex].kilometers += kilometers;
+      updatedWorkouts[existingWorkoutIndex].kilometers = kilometers;
       setWorkouts(updatedWorkouts);
     } else {
       setWorkouts([...workouts, { date, kilometers }]);

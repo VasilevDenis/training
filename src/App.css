@@ -1,0 +1,76 @@
+
+.App {
+  max-width: 600px; /* Limiting width of the component */
+  width: 100%; /* Full width of the container */
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: shadow for depth */
+}
+
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.workout-table {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.workout-table-header {
+  display: flex;
+  background-color: #2b2c33;
+  font-weight: bold;
+}
+
+.workout-table-row {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+.workout-table-cell {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+}
+
+.workout-table-row:hover {
+  background-color: #1b1b1d;
+}
+
+.workout-table-cell button {
+  margin: 0 5px;
+  background-color: transparent;
+  border: none;
+  color: #007BFF;
+  cursor: pointer;
+}
+
+.workout-table-cell button:hover {
+  text-decoration: underline;
+}
